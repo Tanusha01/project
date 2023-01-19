@@ -1,0 +1,408 @@
+ @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&display=swap');
+@font-face {
+    font-family: CormorantUpright-Bold;
+    src: url(/fonts/CormorantUpright-Bold.ttf);
+}
+@font-face {
+    font-family: CormorantUpright-Light;
+    src: url(/fonts/CormorantUpright-Light.ttf);
+}
+
+ :host{
+    .header{
+        width: 100%;
+        height: 60px; 
+        background: black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .height{
+        font-size:30px;
+        color:white;
+        font-family: 'Cormorant Upright';
+        font-weight: 700;
+        }
+    .menu{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 32px;
+       
+    }
+    .menu a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .login{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .login a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .log{
+        border-right:2px solid #ffffff;
+    }
+    .log a{
+        margin-right: 10px;
+    }
+    .text_1{
+        font-family: 'Cormorant Upright';
+        font-style: bold;
+        font-weight: 700;
+        font-size: 23px;
+        color:white ;
+    }
+    .header_3{
+        height: 700px;
+        width: 100%;
+        background-color: #0C0B08;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .text_2{
+        font-family: 'Cormorant Upright';
+        font-weight: 600;
+        color:#DCCA87 ;
+        text-align: center;   
+        font-size: 64px;
+        margin-top: 30px;
+        max-width: 1128px;
+    }
+    .header_2{
+        width: 100%;
+        height:600px ;
+        object-fit: cover;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header_2 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+    }
+    .texts{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .text_3{
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 16px;
+        color:#AAAAAA ;
+        text-align: center;
+        max-width: 868px;
+        margin-top: 32px;
+    }
+    .button_1{
+        width: 140px;
+        height: 44px;
+        background-color: #DCCA87;
+        color:#0C0B08;
+        font-family: 'Cormorant Upright';
+        font-weight: 600;
+        font-size: 16px;
+        border: none;
+        margin-right:40px ;
+    }
+    .button_2{
+        width: 140px;
+        height: 44px;
+        background-color: #0C0B08;
+        color:#DCCA87;
+        font-family: 'Cormorant Upright';
+        font-weight: 600;
+        font-size: 16px;
+        border: 1px solid #DCCA87;
+    }
+    .zn{
+        margin-left: auto;
+        margin-right: 50px;
+        margin-top: 30px;
+    }
+    .header_4{
+        width: 100%;
+        height:900px ;
+        position: relative;
+    }
+    .glass{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .text-header-2{
+        color:#DCCA87;
+        font-family: 'Cormorant Upright';
+        font-weight: 600;
+        font-size: 90px;
+        position: absolute;
+    }
+    .food_menu{
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        position: absolute;
+        top: 261px;
+        left: 145px;
+        list-style: none;
+
+    }
+    .buttons{
+        margin-top: 40px;
+    }
+    .food_menu a{
+        color: #ffffff;
+        top:50px;
+        font-size: 80px;
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin: 64px 0;
+    }
+    .header_5{
+        width: 100%;
+        height: 770px;
+        background: #0C0C0C;
+        position: relative;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .block{
+        width: 1364px;
+        height: 466px;
+        border:1px solid #DCCA87;
+        position: absolute;
+        top: 152px;
+        margin:0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .inputs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap:40px;
+        margin: 40px 0;
+    }
+    select{
+        width: 250px;
+        height: 50px;
+        padding: 5px 5px 5px 5px;
+        font-size: 16px;
+        border: 2px solid #DCCA87;
+        color: #AAAAAA;
+        background:#0C0B08 ;
+    }
+    form input{
+        width: 250px;
+        height: 38px;
+        padding: 5px 0 5px 5px;
+        font-size: 16px;
+        border: 2px solid #DCCA87;
+        color: #AAAAAA;
+        background:#030303 ;
+        &::-webkit-calendar-picker-indicator{
+            background-color: #DCCA87;
+            padding: 20px 10px;
+        }
+    }
+    .book-now{
+        width: 145px;
+        height: 44px;
+        background: #030303;
+        border: 1px solid #DCCA87;
+        color:#ffffff;
+        font-family: 'Cormorant Upright';
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .mask{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .text-header-6{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        top: 280px;
+        right: 0;
+        left: 0;
+    }
+    .text-1{
+        font-family: 'Cormorant Upright';
+        font-style: bold;
+        font-weight: 700;
+        font-size: 32px;
+        color:white ;
+    }
+    .text-2{
+        font-family: 'Cormorant Upright';
+        font-weight: 600;
+        color:#DCCA87 ;
+        text-align: center;   
+        font-size: 128px;
+        margin-top: 30px;
+        max-width: 1128px;
+        margin-bottom: 32px;
+    }
+    .text-3{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .header_7{
+        width: 100%;
+        height: 770px;
+        background: #0C0C0C;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+    }
+    .header_6{
+        position: relative;
+        display: flex;
+    }
+    input{
+        width: 600px;
+        height: 30px;
+        padding: 5px 0 5px 5px;
+        font-size: 16px;
+        border: 2px solid #ccc;
+        color: #AAAAAA;
+        background:#030303 ;
+        padding: 5px 0 5px 30px ;
+        background: #030303;
+        border: 1px solid #DCCA87 ;
+    }
+    .mail{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 32px;
+        margin-top: 64px;
+    }
+    .zn_2{
+        position: absolute;
+        width: 146px;
+        height: 146px;
+        right: 77px;
+        top: 80px
+    }
+    .header_8{
+        width: 100%;
+        height: 500px;
+        background:url(/assets/img/Mask\ Group.png);
+        object-fit: cover;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .contacts{
+        font-family: 'CormorantUpright-Light';
+        font-style: light;
+        font-size: 32px;
+        top: 0;
+        color: #AAAAAA;
+    }
+    .adress{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #AAAAAA;
+    }
+    .texts-8{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .phone{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #AAAAAA;
+    }
+    .text_4{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #ffffff;
+        width: 438px;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+    .all{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .text_5{
+        font-family: 'Cormorant Upright';
+        font-weight: 600;
+        color:#DCCA87 ;
+        text-align: center;   
+        font-size: 64px;
+        max-width: 1128px;
+        letter-spacing: 0.04em;   
+     }
+     .center{
+        margin-left:125px ;
+     }
+     .days{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #AAAAAA;
+     }
+     .right{
+        gap: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 125px;
+     }
+}
