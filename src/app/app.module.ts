@@ -6,10 +6,13 @@ import { AppComponent } from './app.component';
 import { MyProjectComponent } from './my-project/my-project.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { RouterModule } from '@angular/router';
+import { ContactsComponent } from './contacts/contacts.component';
 
 const routes=[
 {path:'', component:MyProjectComponent},
 {path:'about', component:AboutUsComponent},
+{path:'contacts', component:ContactsComponent}
+
 
 ]
 
@@ -17,7 +20,8 @@ const routes=[
   declarations: [
     AppComponent,
     MyProjectComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
