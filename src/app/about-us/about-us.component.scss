@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&display=swap');
+@font-face {
+  font-family: CormorantUpright-Bold;
+  src: url(/fonts/CormorantUpright-Bold.ttf);
+}
+@font-face {
+  font-family: CormorantUpright-Light;
+  src: url(/fonts/CormorantUpright-Light.ttf);
+}
+
+:host {
+  .header {
+    width: 100%;
+    height: 60px;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .height {
+    font-size: 30px;
+    color: white;
+    font-family: 'Cormorant Upright';
+    font-weight: 700;
+    margin-left: 120px;
+  }
+  .height_2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+  }
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 32px;
+    margin-left: 440px;
+  }
+  .menu a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .login {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 110px;
+  }
+  .login a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .log {
+    border-right: 2px solid #ffffff;
+  }
+  .log a {
+    margin-right: 10px;
+  }
+  .text_1 {
+    font-family: 'Cormorant Upright';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 23px;
+    color: white;
+  }
+  .header_2 {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header_2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+  .text-header-2 {
+    color: #dcca87;
+    font-family: 'Cormorant Upright';
+    font-weight: 600;
+    font-size: 90px;
+    position: absolute;
+  }
+  .text_1 {
+    font-family: 'Cormorant Upright';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 23px;
+    color: white;
+  }
+  .header_3 {
+    width: 100%;
+    height: 900px;
+    background-color: #0c0b08;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .text_2 {
+    font-family: 'Cormorant Upright';
+    font-weight: 600;
+    color: #dcca87;
+    text-align: center;
+    font-size: 64px;
+    margin-top: 30px;
+    max-width: 1128px;
+  }
+  .text_3 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #aaaaaa;
+    width: 523px;
+  }
+  .img-cafe {
+    object-fit: cover;
+    width: 523px;
+    height: 566px;
+    margin-top: 40px;
+  }
+  .all-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 145px;
+    margin-top: 64px;
+  }
+  .img-cafe-2 {
+    object-fit: cover;
+    width: 634px;
+    height: 385px;
+  }
+
+  .collums {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .number {
+    font-family: 'Cormorant Upright';
+    font-weight: 600;
+    color: #dcca87;
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+  .collumn-1 {
+    border-right: 1px solid #ffffff;
+    padding-right: 40px;
+    margin-top: 20px;
+  }
+  .collumn-1:last-child {
+    border: none;
+  }
+  .right-content {
+    margin-top: 40px;
+  }
+  .header_4 {
+    width: 100%;
+    height: 1000px;
+    background-color: #0c0b08;
+    position: relative;
+  }
+  .texts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 125px;
+  }
+  .text_4 {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    color: #aaaaaa;
+    text-align: center;
+    max-width: 824px;
+    margin-top: 32px;
+  }
+  video {
+    object-fit: contain;
+    height: 550px;
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .zn {
+    width: 146px;
+    height: 146px;
+    right: 77px;
+    top: 100px;
+    position: absolute;
+  }
+  .header_5 {
+    width: 100%;
+    height: 850px;
+    background: url(/assets/img/Mask\ Group.png);
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 100px;
+    position: relative;
+  }
+  .image {
+    width: 534px;
+    height: 689px;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  .right-text-1 {
+    font-family: 'Cormorant Upright';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 23px;
+    color: white;
+    text-transform: capitalize;
+  }
+  .right-text-2 {
+    font-family: 'Cormorant Upright';
+    font-weight: 600;
+    color: #dcca87;
+    font-size: 64px;
+    margin-top: 10px;
+    max-width: 1128px;
+    text-transform: capitalize;
+    margin-bottom: 64px;
+  }
+  .right-text-3 {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    color: #aaaaaa;
+    width: 570px;
+    margin-bottom: 64px;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+  }
+  .right-text-4 {
+    font-family: 'Cormorant Upright';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    text-transform: capitalize;
+    color: #dcca87;
+    margin-bottom: 10px;
+  }
+  .right-text-5 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #aaaaaa;
+  }
+  .kevin {
+    margin-top: 64px;
+  }
+  .zn_2 {
+    position: absolute;
+    top: -75px;
+    left: 40px;
+  }
+  .header_6 {
+    width: 100%;
+    height: 800px;
+    background-color: #0c0b08;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .customer-text-1 {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: #aaaaaa;
+    max-width: 412px;
+    margin-bottom: 15px;
+  }
+  .customer-text-2 {
+    font-family: 'Cormorant Upright';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #dcca87;
+    margin-bottom: 15px;
+  }
+  .customer-text-3 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #f5efdb;
+  }
+  .customer-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .foto {
+    object-fit: cover;
+  }
+  .customer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 64px;
+  }
+  .customers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 35px;
+    margin-top: 64px;
+  }
+  .header_7 {
+    width: 100%;
+    height: 550px;
+    background: url(/assets/img/Mask\ Group.png);
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+  .button_1 {
+    width: 140px;
+    height: 44px;
+    background-color: #dcca87;
+    color: #0c0b08;
+    font-family: 'Cormorant Upright';
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    margin-top: 24px;
+  }
+  .texts-header-7 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+  }
+  .photos img:last-child,
+  .photos img:child(2) {
+    margin-left: 20px;
+    object-fit: cover;
+  }
+  .right-text-5-2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #aaaaaa;
+    width: 400px;
+  }
+  .header_9 {
+    width: 100%;
+    height: 400px;
+    background: url(/assets/img/Mask\ Group.png);
+    object-fit: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contacts {
+    font-family: 'CormorantUpright-Light';
+    font-style: light;
+    font-size: 32px;
+    top: 0;
+    color: #aaaaaa;
+  }
+  .adress {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #aaaaaa;
+  }
+  .texts-8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .phone {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #aaaaaa;
+  }
+  .text_4 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    width: 438px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  .all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .text_5 {
+    font-family: 'Cormorant Upright';
+    font-weight: 600;
+    color: #dcca87;
+    text-align: center;
+    font-size: 64px;
+    max-width: 1128px;
+    letter-spacing: 0.04em;
+  }
+  .center {
+    margin-left: 125px;
+  }
+  .days {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #aaaaaa;
+  }
+  .right {
+    gap: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 125px;
+  }
+  footer {
+    position: absolute;
+    bottom: 20px;
+  }
+  .footer_p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #aaaaaa;
+  }
+  .header_8 {
+    width: 100%;
+    height: 770px;
+    background: #0c0c0c;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+  }
+  input {
+    width: 600px;
+    height: 30px;
+    padding: 5px 0 5px 5px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    color: #aaaaaa;
+    background: #030303;
+    padding: 5px 0 5px 30px;
+    background: #030303;
+    border: 1px solid #dcca87;
+  }
+  .mail {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 32px;
+    margin-top: 64px;
+  }
+  .zn_3 {
+    position: absolute;
+    width: 146px;
+    height: 146px;
+    right: 77px;
+    top: 80px;
+  }
+  .book-now {
+    width: 145px;
+    height: 44px;
+    background: #030303;
+    border: 1px solid #dcca87;
+    color: #ffffff;
+    font-family: 'Cormorant Upright';
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .block {
+    width: 1364px;
+    height: 466px;
+    border: 1px solid #dcca87;
+    position: absolute;
+    top: 152px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

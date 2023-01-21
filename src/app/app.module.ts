@@ -4,15 +4,26 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MyProjectComponent } from './my-project/my-project.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { RouterModule } from '@angular/router';
+
+const routes=[
+{path:'', component:MyProjectComponent},
+{path:'about', component:AboutUsComponent},
+
+]
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyProjectComponent
+    MyProjectComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
