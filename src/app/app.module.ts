@@ -7,11 +7,18 @@ import { MyProjectComponent } from './my-project/my-project.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { RouterModule } from '@angular/router';
 import { ContactsComponent } from './contacts/contacts.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { MenuComponent } from './menu/menu.component';
+import { BlogComponent } from './blog/blog.component';
 
 const routes=[
-{path:'', component:MyProjectComponent},
+{path:'offer', component:MyProjectComponent},
 {path:'about', component:AboutUsComponent},
-{path:'contacts', component:ContactsComponent}
+{path:'contacts', component:ContactsComponent},
+{path:'', component:HomePageComponent},
+{path:'menu', component:MenuComponent}
+
+
 
 
 ]
@@ -21,7 +28,10 @@ const routes=[
     AppComponent,
     MyProjectComponent,
     AboutUsComponent,
-    ContactsComponent
+    ContactsComponent,
+    HomePageComponent,
+    MenuComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
