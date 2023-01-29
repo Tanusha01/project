@@ -357,4 +357,183 @@
     flex-direction: column;
     align-items: center;
   }
+  .header_13 {
+    width: 100%;
+    height: 400px;
+    background: url(/assets/img/Mask\ Group.png);
+    object-fit: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contacts {
+    font-family: 'CormorantUpright-Light';
+    font-style: light;
+    font-size: 32px;
+    top: 0;
+    color: #aaaaaa;
+  }
+  .adress {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #aaaaaa;
+  }
+  .texts-8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .phone {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #aaaaaa;
+  }
+  .text_4 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    width: 438px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  .all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .text_5 {
+    font-family: 'Cormorant Upright';
+    font-weight: 600;
+    color: #dcca87;
+    text-align: center;
+    font-size: 64px;
+    max-width: 1128px;
+    letter-spacing: 0.04em;
+  }
+  .center {
+    margin-left: 125px;
+  }
+  .days {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #aaaaaa;
+  }
+  .right {
+    gap: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 125px;
+  }
+  footer {
+    position: absolute;
+    bottom: 20px;
+  }
+  .footer_p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #aaaaaa;
+  }
+  .header_14 {
+    width: 100%;
+    height: 770px;
+    background: #0c0c0c;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+  }
+  input {
+    width: 600px;
+    height: 30px;
+    padding: 5px 0 5px 5px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    color: #aaaaaa;
+    background: #030303;
+    padding: 5px 0 5px 30px;
+    background: #030303;
+    border: 1px solid #dcca87;
+  }
+  .mail {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 32px;
+    margin-top: 64px;
+  }
+  .zn_4 {
+    position: absolute;
+    width: 146px;
+    height: 146px;
+    right: 77px;
+    top: 80px;
+  }
+  .book-now-3 {
+    width: 145px;
+    height: 44px;
+    background: #030303;
+    border: 1px solid #dcca87;
+    color: #ffffff;
+    font-family: 'Cormorant Upright';
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .block {
+    width: 1364px;
+    height: 466px;
+    border: 1px solid #dcca87;
+    position: absolute;
+    top: 152px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .book-now_4 {
+    width: 145px;
+    height: 44px;
+    background: #dcca87;
+    border: 1px solid #dcca87;
+    color: #030303;
+    font-family: 'Cormorant Upright';
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    text-decoration: none;
+  }
+  .customer-text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }

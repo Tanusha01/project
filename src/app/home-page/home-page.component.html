@@ -2,11 +2,11 @@
     <div class="height">GERICHT</div>
     <div class="height_2">
         <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#"> Landing</a></li>
+            <li><a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
+            <li><a routerLink="/menu" routerLinkActive="active" ariaCurrentWhenActive="page">Menu</a></li>
+            <li><a routerLink="/contacts" routerLinkActive="active" ariaCurrentWhenActive="page">Contact Us</a></li>
+            <li><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About Us</a></li>
+            <li><a routerLink="/offer" routerLinkActive="active" ariaCurrentWhenActive="page">Offers</a></li>
         </ul>
         <ul class="login">
             <li class="log"><a href="#">Log in / Registration</a></li>
@@ -22,7 +22,7 @@
         <p class="right-text-2">The key to Fine dining</p>
         <p class="right-text-5-2">LSit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi
             facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus </p>
-        <button class="button_1">Explore Menu</button>
+        <a routerLink="/menu" routerLinkActive="active" ariaCurrentWhenActive="page" class="button_1">Explore Menu</a>
     </div>
     <div class="photos">
         <img class="hero" src="/assets/img/Hero img.png">
@@ -38,13 +38,14 @@
             <p class="left-text-2">About Us</p>
             <p class="left-text-5-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing
                 ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
-            <button class="button_1-1">Khow More</button>
+            <a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page" class="button_1-1">Khow
+                More</a>
         </div>
         <div class="right_blocks">
             <p class="right-text-2">Our History</p>
             <p class="right-text-5-2">Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat
                 morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
-            <button class="button_1">Khow More</button>
+            <a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page" class="button_1">Khow More</a>
         </div>
     </div>
 </div>
@@ -78,9 +79,9 @@
 <div class="header_5">
     <img class="glass" src="/assets/img/glass.png">
     <ul class="food_menu">
-        <li><a href="#">Bar Menu</a></li>
-        <li><a href="#">Food Menu</a></li>
-        <li><a href="#">Desserts Menu</a></li>
+        <li><a routerLink="/menu" routerLinkActive="active" ariaCurrentWhenActive="page">Bar Menu</a></li>
+        <li><a routerLink="/menu" routerLinkActive="active" ariaCurrentWhenActive="page">Food Menu</a></li>
+        <li><a routerLink="/menu" routerLinkActive="active" ariaCurrentWhenActive="page">Desserts Menu</a></li>
     </ul>
 </div>
 
@@ -175,7 +176,7 @@
             </div>
         </div>
     </div>
-    <button class="book-now_4">Subscribe</button>
+    <a routerLink="/menu" routerLinkActive="active" ariaCurrentWhenActive="page" class="book-now_4">Subscribe</a>
 </div>
 
 
@@ -323,7 +324,6 @@
             </div>
         </div>
 
-        <button class="book-now">Subscribe</button>
     </div>
     <img class="meat" src="/assets/img/meat.png">
     <img class="g" src="/assets/img/G.png">
@@ -371,7 +371,8 @@
             </div>
         </div>
     </div>
-    <button class="book-now_2">View More</button>
+    <a class="book-now_2" href="https://www.instagram.com/explore/tags/gericht/?__coig_restricted=1"
+        target="_blank">View More</a>
     <img class="zn_3" src="/assets/img/zn.png">
 </div>
 
@@ -383,7 +384,8 @@
         <p class="right-text-5-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis
             elit
             elit scelerisque egestas mu.</p>
-        <button class="button_1">View More</button>
+        <a href="https://instagram.com/manuelas.kochstube?igshid=YmMyMTA2M2Y=" target="_blank" class="button_1">View
+            More</a>
     </div>
     <div class="photos">
         <img src="/assets/img/2.png">
@@ -422,9 +424,12 @@
             <p class="text_5">Gerícht</p>
             <p class="text_4">"The best way to find yourself is to lose yourself in the service of others”</p>
             <div class="social">
-                <img src="/assets/img/u_facebook-f.png" alt="facebook">
-                <img src="/assets/img/u_twitter-alt.png" alt="facebook">
-                <img src="/assets/img/u_instagram.png" alt="facebook">
+                <a href="https://twitter.com/search?q=gericht&src=typed_query" target="_blank"><img
+                        src="/assets/img/u_twitter-alt.png" alt="facebook"></a>
+                <a href="https://www.facebook.com/groups/641839766874583" target="_blank"><img
+                        src="/assets/img/u_facebook-f.png" alt="facebook"></a>
+                <a href="https://instagram.com/manuelas.kochstube?igshid=YmMyMTA2M2Y=" target="_blank"><img
+                        src="/assets/img/u_instagram.png" alt="facebook"></a>
 
             </div>
         </div>

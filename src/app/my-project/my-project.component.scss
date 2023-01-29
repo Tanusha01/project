@@ -129,6 +129,10 @@
     font-size: 16px;
     border: none;
     margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
   }
   .button_2 {
     width: 140px;
@@ -139,6 +143,10 @@
     font-weight: 600;
     font-size: 16px;
     border: 1px solid #dcca87;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
   }
   .zn {
     margin-left: auto;
@@ -175,6 +183,10 @@
   }
   .buttons {
     margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
   }
   .food_menu a {
     color: #ffffff;

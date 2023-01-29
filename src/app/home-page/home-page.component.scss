@@ -117,6 +117,10 @@
     font-size: 16px;
     border: none;
     margin-top: 24px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .button_1-1 {
     width: 140px;
@@ -129,6 +133,10 @@
     border: none;
     margin-top: 24px;
     align-items: flex-end;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .texts-header-7 {
     display: flex;
@@ -794,6 +802,10 @@
     font-weight: 600;
     font-size: 16px;
     margin-top: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
   }
   .zn_3 {
     position: absolute;
@@ -822,7 +834,9 @@
     font-size: 16px;
     border: none;
     margin-top: 24px;
+    text-decoration: none;
   }
+
   .texts-header-7 {
     display: flex;
     justify-content: center;
@@ -1014,6 +1028,7 @@
     justify-content: center;
     align-items: center;
     margin: 40px auto;
+    text-decoration: none;
   }
   .customer-text {
     display: flex;
