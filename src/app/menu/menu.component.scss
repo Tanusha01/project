@@ -16,13 +16,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
   }
   .height {
     font-size: 30px;
     color: white;
     font-family: 'Cormorant Upright';
     font-weight: 700;
-    margin-left: 120px;
+    padding-left: 120px;
   }
   .height_2 {
     display: flex;
@@ -30,15 +31,7 @@
     align-items: center;
     justify-content: center;
     gap: 200px;
-  }
-  .menu {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 32px;
-    margin-left: 440px;
+    padding-right: 120px;
   }
   .menu a {
     color: #ffffff;
@@ -51,7 +44,6 @@
     align-items: center;
     flex-direction: row;
     gap: 10px;
-    margin-left: 110px;
   }
   .login a {
     color: #ffffff;
@@ -63,6 +55,95 @@
   .log a {
     margin-right: 10px;
   }
+  .hamburger-menu {
+    display: none;
+  }
+
+  #menu__toggle {
+    opacity: 0;
+    display: none;
+  }
+
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menu__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    visibility: hidden;
+    transform: translateY(-200px);
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    transition: 0.5s ease-out;
+    width: 100%;
+  }
+  .menu__item {
+    display: block;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px;
+  }
+  .menu__item:hover {
+    background: none;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    z-index: 2;
+    visibility: visible;
+    margin-top: 46px;
+    position: absolute;
+    flex-direction: column;
+    background: #030303;
+    transform: translateY(0);
+    overflow: visible;
+    opacity: 1;
+    transition: 0.5s ease-out;
+    left: 0;
+    right: 0;
+  }
+
   .text_1 {
     font-family: 'Cormorant Upright';
     font-style: bold;
@@ -102,7 +183,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 200px;
+    gap: 130px;
   }
   .menu {
     list-style: none;
@@ -111,7 +192,7 @@
     align-items: center;
     flex-direction: row;
     gap: 32px;
-    margin-left: 440px;
+    margin-left: 280px;
   }
   .menu a {
     color: #ffffff;
@@ -535,5 +616,188 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  @media (max-width: 1500px) {
+    .menu {
+      margin-left: 0;
+    }
+    .height_2 {
+      gap: 100px;
+    }
+    .stacan {
+      width: 300px;
+    }
+  }
+
+  @media (max-width: 1300px) {
+    .height_2 {
+      gap: 30px;
+    }
+    .classics {
+      width: 400px;
+    }
+    .login {
+      margin-left: 30px;
+    }
+  }
+  @media (max-width: 1100px) {
+    .height_2 {
+      padding-right: 50px;
+    }
+    .stacan {
+      width: 300px;
+    }
+    .classics {
+      width: 400px;
+    }
+    .center {
+      margin-left: 50px;
+    }
+    .right {
+      margin-left: 50px;
+    }
+    .height {
+      padding-left: 30px;
+    }
+    .login {
+      margin-left: 30px;
+    }
+    .name_alco {
+      flex-direction: column;
+    }
+    .header_4,
+    .header_5,
+    .header_6 {
+      height: auto;
+    }
+    .all {
+      flex-direction: column;
+    }
+    .header_13 {
+      height: auto;
+    }
+    .right,
+    .center {
+      margin-left: 0;
+      margin-top: 30px;
+    }
+    .texts-8 {
+      margin-top: 30px;
+    }
+    .right {
+      margin-bottom: 60px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .height {
+      padding-left: 30px;
+    }
+    .login {
+      margin-left: 30px;
+    }
+    .name_alco {
+      flex-direction: column;
+    }
+    .header_3 {
+      display: flex;
+      position: relative;
+      height: auto;
+    }
+    .glass {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      object-fit: cover;
+      top: 0;
+    }
+    .food_menu {
+      position: relative;
+      z-index: 2;
+      margin: auto;
+      left: 0;
+      top: 0;
+    }
+  }
+  @media (max-width: 890px) {
+    .hamburger-menu {
+      display: flex;
+    }
+    #menu__toggle:checked ~ .menu__box {
+      margin-top: 0px;
+    }
+    .menu {
+      display: none;
+    }
+    .height {
+      padding-left: 80px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .coctail,
+    .soup {
+      width: 300px;
+      height: 200px;
+    }
+    .food_menu a {
+      font-size: 50px;
+    }
+    .header {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .login {
+      display: none;
+    }
+    .header {
+      justify-content: center;
+    }
+    .height {
+      padding-left: 0;
+    }
+  }
+  @media (max-width: 450px) {
+    .classics {
+      width: 300px;
+    }
+    .line {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .head {
+      font-size: 50px;
+    }
+    .text_4 {
+      width: auto;
+    }
+
+    .login {
+      margin-bottom: 10px;
+    }
+    .food_menu {
+      left: 10px;
+    }
+    .opisanie {
+      width: auto;
+      margin-left: 20px;
+    }
+    .name_food {
+      font-size: 20px;
+    }
+    .line {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .text-header-2 {
+      font-size: 50px;
+    }
+    .classics {
+      margin: 0;
+    }
+    .height_2 {
+      margin: 0;
+    }
   }
 }

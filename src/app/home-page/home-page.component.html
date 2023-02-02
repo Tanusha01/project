@@ -15,6 +15,30 @@
     </div>
 </div>
 
+<div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+        <span></span>
+    </label>
+    <ul class="menu__box">
+        <li><a class="menu__item" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
+        </li>
+        <li><a class="menu__item" routerLink="/menu" routerLinkActive="active" ariaCurrentWhenActive="page">Menu</a>
+        </li>
+        <li><a class="menu__item" routerLink="/contacts" routerLinkActive="active" ariaCurrentWhenActive="page">Contact
+                Us</a>
+        </li>
+        <li><a class="menu__item" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About
+                Us</a>
+        </li>
+        <li><a class="menu__item" routerLink="/offer" routerLinkActive="active" ariaCurrentWhenActive="page">Offers</a>
+        </li>
+
+        <li><a class="menu__item" href="#">Log in / Registration</a></li>
+        <li><a class="menu__item" href="#">Book table</a></li>
+    </ul>
+</div>
+
 
 <div class="header_2">
     <div class="texts-header-7">
@@ -31,8 +55,10 @@
 
 
 <div class="header_3">
-    <img class="glight" src="/assets/img/Glight.png">
-    <img class="knife" src="/assets/img/savernake-knives-f4jl2ezowuM-unsplash 2.png">
+    <div class="obj_img">
+        <img class="glight" src="/assets/img/Glight.png">
+        <img class="knife" src="/assets/img/savernake-knives-f4jl2ezowuM-unsplash 2.png">
+    </div>
     <div class="block-knife">
         <div class="block_left_1">
             <p class="left-text-2">About Us</p>
@@ -42,8 +68,8 @@
                 More</a>
         </div>
         <div class="right_blocks">
-            <p class="right-text-2">Our History</p>
-            <p class="right-text-5-2">Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat
+            <p class="right-text-2-5">Our History</p>
+            <p class="right-text-5-2-2">Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat
                 morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
             <a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page" class="button_1">Khow More</a>
         </div>
@@ -183,7 +209,7 @@
 <div class="header_7">
     <img class="zn_2" src="/assets/img/zn.png">
 
-    <div class="foto">
+    <div class="foto_7">
         <img class="image" src="/assets/img/Image.png">
     </div>
     <div class="right_block">
@@ -261,79 +287,89 @@
             vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
     </div>
     <img class="zn" src="/assets/img/zn.png">
-    <video src="/assets/img/Video-1.mp4" controls loop></video>
+    <video src="/assets/img/Video-1.mp4" autoplay loop [muted]="'muted'" playsInline></video>
 </div>
 
 
 <div class="header_10">
-    <div class="block_left">
-        <div class="circle">
-            <p class="right-text-1">Chase the new Flavour</p>
-            <p class="right-text-2">The key to Fine dining</p>
-        </div>
-        <div class="circle-all">
-            <div class="two-blocks">
-                <div class="block_circle">
-                    <div class="circle-numbers">
-                        <img class="circle_number" src="/assets/img/circle.png">
-                        <p class="number">1</p>
-                    </div>
-
-                    <div class="text_circle">
-                        <p class="customer-text-2">Bib Gourmond</p>
-                        <p class="customer-text-1_1">Lorem ipsum dolor sit amet, consectetur.</p>
-                    </div>
-                </div>
-
-                <div class="block_circle">
-                    <div class="circle-numbers">
-                        <img class="circle_number" src="/assets/img/circle.png">
-                        <p class="number">2</p>
-                    </div>
-
-                    <div class="text_circle">
-                        <p class="customer-text-2">AA Hospitality </p>
-                        <p class="customer-text-1_1">Lorem ipsum dolor sit amet, consectetur.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="two-blocks">
-                <div class="block_circle">
-                    <div class="circle-numbers">
-                        <img class="circle_number" src="/assets/img/circle.png">
-                        <p class="number">3</p>
-                    </div>
-
-                    <div class="text_circle">
-                        <p class="customer-text-2">Rising Star</p>
-                        <p class="customer-text-1_1">Lorem ipsum dolor sit amet, consectetur.</p>
-                    </div>
-                </div>
-
-                <div class="block_circle">
-                    <div class="circle-numbers">
-                        <img class="circle_number" src="/assets/img/circle.png">
-                        <p class="number">4</p>
-                    </div>
-
-                    <div class="text_circle">
-                        <p class="customer-text-2">Outstanding Chef</p>
-                        <p class="customer-text-1_1">Lorem ipsum dolor sit amet, consectetur.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    <div class="circle_circle">
+        <p class="right-text-1">Chase the new Flavour</p>
+        <p class="right-text-2">The key to Fine dining</p>
     </div>
-    <img class="meat" src="/assets/img/meat.png">
-    <img class="g" src="/assets/img/G.png">
+    <div class="obj">
+        <div class="block_left">
+            <div class="circle">
+                <p class="right-text-1">Chase the new Flavour</p>
+                <p class="right-text-2">The key to Fine dining</p>
+            </div>
+            <div class="circle-all">
+                <div class="two-blocks">
+                    <div class="block_circle">
+                        <div class="circle-numbers">
+                            <img class="circle_number" src="/assets/img/circle.png">
+                            <p class="number">1</p>
+                        </div>
+
+                        <div class="text_circle">
+                            <p class="customer-text-2">Bib Gourmond</p>
+                            <p class="customer-text-1_1">Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                    </div>
+
+                    <div class="block_circle">
+                        <div class="circle-numbers">
+                            <img class="circle_number" src="/assets/img/circle.png">
+                            <p class="number">2</p>
+                        </div>
+
+                        <div class="text_circle">
+                            <p class="customer-text-2">AA Hospitality </p>
+                            <p class="customer-text-1_1">Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="two-blocks">
+                    <div class="block_circle">
+                        <div class="circle-numbers">
+                            <img class="circle_number" src="/assets/img/circle.png">
+                            <p class="number">3</p>
+                        </div>
+
+                        <div class="text_circle">
+                            <p class="customer-text-2">Rising Star</p>
+                            <p class="customer-text-1_1">Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                    </div>
+
+                    <div class="block_circle">
+                        <div class="circle-numbers">
+                            <img class="circle_number" src="/assets/img/circle.png">
+                            <p class="number">4</p>
+                        </div>
+
+                        <div class="text_circle">
+                            <p class="customer-text-2">Outstanding Chef</p>
+                            <p class="customer-text-1_1">Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="g-img">
+            <img class="meat" src="/assets/img/meat.png">
+            <div class="gg">
+                <img class="g" src="/assets/img/G.png">
+            </div>
+        </div>
+    </div>
 </div>
 
 
 <div class="header_11">
     <p class="text_1">Blogs</p>
     <p class="text_2">Gerícht updates</p>
-    <div class="photos">
+    <div class="photoss">
         <div class="photo_11">
             <img class="pic" src="/assets/img/meat_2.png">
             <div class="texts_11">
@@ -381,16 +417,19 @@
     <div class="texts-header-7">
         <p class="right-text-1">Instagram</p>
         <p class="right-text-2">Photo Gallery</p>
-        <p class="right-text-5-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis
+        <p class="right-text-5-27">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis
             elit
             elit scelerisque egestas mu.</p>
         <a href="https://instagram.com/manuelas.kochstube?igshid=YmMyMTA2M2Y=" target="_blank" class="button_1">View
             More</a>
     </div>
-    <div class="photos">
-        <img src="/assets/img/2.png">
-        <img src="/assets/img/1.png">
-        <img src="/assets/img/7.png">
+    <div class="photoses">
+        <a href="https://instagram.com/manuelas.kochstube?igshid=YmMyMTA2M2Y=" target="_blank"><img
+                src="/assets/img/2.png" class="image_ins"></a>
+        <a href="https://instagram.com/manuelas.kochstube?igshid=YmMyMTA2M2Y=" target="_blank"><img
+                src="/assets/img/1.png" class="image_ins"></a>
+        <a href="https://instagram.com/manuelas.kochstube?igshid=YmMyMTA2M2Y=" target="_blank"> <img
+                src="/assets/img/7.png" class="image_ins"></a>
 
     </div>
 </div>
