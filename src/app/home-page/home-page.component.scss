@@ -8,60 +8,60 @@
   src: url(/fonts/CormorantUpright-Light.ttf);
 }
 :host {
-  .header {
-    width: 100%;
-    height: 60px;
-    background: black;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .height {
-    font-size: 30px;
-    color: white;
-    font-family: 'Cormorant Upright';
-    font-weight: 700;
-    padding-left: 120px;
-  }
-  .height_2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 200px;
-    padding-right: 120px;
-  }
-  .menu {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 32px;
-  }
-  .menu a {
-    color: #ffffff;
-    text-decoration: none;
-  }
-  .login {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 10px;
-  }
-  .login a {
-    color: #ffffff;
-    text-decoration: none;
-  }
-  .log {
-    border-right: 2px solid #ffffff;
-  }
-  .log a {
-    margin-right: 10px;
-  }
+  // .header {
+  //   width: 100%;
+  //   height: 60px;
+  //   background: black;
+  //   display: flex;
+  //   flex-direction: row;
+  //   align-items: center;
+  //   justify-content: space-between;
+  // }
+  // .height {
+  //   font-size: 30px;
+  //   color: white;
+  //   font-family: 'Cormorant Upright';
+  //   font-weight: 700;
+  //   padding-left: 120px;
+  // }
+  // .height_2 {
+  //   display: flex;
+  //   flex-direction: row;
+  //   align-items: center;
+  //   justify-content: center;
+  //   gap: 200px;
+  //   padding-right: 120px;
+  // }
+  // .menu {
+  //   list-style: none;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   flex-direction: row;
+  //   gap: 32px;
+  // }
+  // .menu a {
+  //   color: #ffffff;
+  //   text-decoration: none;
+  // }
+  // .login {
+  //   list-style: none;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   flex-direction: row;
+  //   gap: 10px;
+  // }
+  // .login a {
+  //   color: #ffffff;
+  //   text-decoration: none;
+  // }
+  // .log {
+  //   border-right: 2px solid #ffffff;
+  // }
+  // .log a {
+  //   margin-right: 10px;
+  // }
   .text_1 {
     font-family: 'Cormorant Upright';
     font-style: bold;
@@ -916,104 +916,104 @@
     color: #aaaaaa;
     width: 450px;
   }
-  .header_13 {
-    width: 100%;
-    height: 400px;
-    background: url(/assets/img/Mask\ Group.png);
-    object-fit: cover;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .contacts {
-    font-family: 'CormorantUpright-Light';
-    font-style: light;
-    font-size: 32px;
-    top: 0;
-    color: #aaaaaa;
-  }
-  .adress {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #aaaaaa;
-  }
-  .texts-8 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-  }
-  .phone {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #aaaaaa;
-  }
-  .text_4 {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #ffffff;
-    width: 438px;
-    text-align: center;
-    margin: 20px 0;
-  }
-  .social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-  }
-  .all {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-  }
-  .text_5 {
-    font-family: 'Cormorant Upright';
-    font-weight: 600;
-    color: #dcca87;
-    text-align: center;
-    font-size: 64px;
-    max-width: 1128px;
-    letter-spacing: 0.04em;
-  }
-  .center {
-    margin: 0 125px;
-  }
-  .days {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #aaaaaa;
-  }
-  .right {
-    gap: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  footer {
-    position: absolute;
-    bottom: 20px;
-  }
-  .footer_p {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #aaaaaa;
-  }
+  // .header_13 {
+  //   width: 100%;
+  //   height: 400px;
+  //   background: url(/assets/img/Mask\ Group.png);
+  //   object-fit: cover;
+  //   position: relative;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   flex-direction: column;
+  // }
+  // .contacts {
+  //   font-family: 'CormorantUpright-Light';
+  //   font-style: light;
+  //   font-size: 32px;
+  //   top: 0;
+  //   color: #aaaaaa;
+  // }
+  // .adress {
+  //   font-family: 'Open Sans';
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   font-size: 16px;
+  //   color: #aaaaaa;
+  // }
+  // .texts-8 {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   flex-direction: column;
+  //   gap: 20px;
+  // }
+  // .phone {
+  //   font-family: 'Open Sans';
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   font-size: 16px;
+  //   color: #aaaaaa;
+  // }
+  // .text_4 {
+  //   font-family: 'Open Sans';
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   font-size: 16px;
+  //   color: #ffffff;
+  //   width: 438px;
+  //   text-align: center;
+  //   margin: 20px 0;
+  // }
+  // .social {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   gap: 16px;
+  // }
+  // .all {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   flex-direction: row;
+  // }
+  // .text_5 {
+  //   font-family: 'Cormorant Upright';
+  //   font-weight: 600;
+  //   color: #dcca87;
+  //   text-align: center;
+  //   font-size: 64px;
+  //   max-width: 1128px;
+  //   letter-spacing: 0.04em;
+  // }
+  // .center {
+  //   margin: 0 125px;
+  // }
+  // .days {
+  //   font-family: 'Open Sans';
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   font-size: 16px;
+  //   color: #aaaaaa;
+  // }
+  // .right {
+  //   gap: 12px;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   flex-direction: column;
+  // }
+  // footer {
+  //   position: absolute;
+  //   bottom: 20px;
+  // }
+  // .footer_p {
+  //   font-family: 'Open Sans';
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   font-size: 16px;
+  //   color: #aaaaaa;
+  // }
   .header_14 {
     width: 100%;
     height: 770px;
@@ -1093,94 +1093,6 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-  }
-
-  .hamburger-menu {
-    display: none;
-  }
-
-  #menu__toggle {
-    opacity: 0;
-    display: none;
-  }
-
-  .menu__btn {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    z-index: 1;
-  }
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #616161;
-  }
-  .menu__btn > span::before {
-    content: '';
-    top: -8px;
-  }
-  .menu__btn > span::after {
-    content: '';
-    top: 8px;
-  }
-  .menu__box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    visibility: hidden;
-    transform: translateY(-200px);
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    z-index: -1;
-    transition: 0.5s ease-out;
-    width: 100%;
-  }
-  .menu__item {
-    display: block;
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 8px;
-  }
-  .menu__item:hover {
-    background: none;
-  }
-  #menu__toggle:checked ~ .menu__btn > span {
-    transform: rotate(45deg);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  #menu__toggle:checked ~ .menu__box {
-    z-index: 2;
-    visibility: visible;
-    position: absolute;
-    flex-direction: column;
-    background: #030303;
-    transform: translateY(0);
-    overflow: visible;
-    opacity: 1;
-    transition: 0.5s ease-out;
-    left: 0;
-    right: 0;
   }
 
   .obj {
@@ -1295,15 +1207,6 @@
   }
 
   @media (max-width: 1200px) {
-    .height {
-      padding-left: 20px;
-    }
-    .center {
-      margin: 0 40px;
-    }
-    .height_2 {
-      padding-right: 20px;
-    }
     .header_3 {
       flex-direction: column;
       height: 600px;
@@ -1349,33 +1252,8 @@
   }
 
   @media (max-width: 1000px) {
-    .hamburger-menu {
-      display: flex;
-    }
-    .header_13 {
-      height: auto;
-      padding: 40px 0;
-    }
-    .all {
-      flex-direction: column;
-    }
-    .center {
-      margin: 40px 0;
-    }
     .login {
       display: none;
-    }
-    .height {
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .menu {
-      display: none;
-    }
-    .height {
-      padding-left: 70px;
     }
     .inputs {
       flex-direction: column;
@@ -1484,10 +1362,6 @@
     .mail {
       width: 200px;
     }
-    .text_4 {
-      width: auto;
-      margin: 30px;
-    }
     .block-knife {
       width: 100%;
     }
@@ -1517,12 +1391,6 @@
     }
     .right-text-5-2 {
       margin: 30px;
-    }
-    .header {
-      flex-direction: column;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
     .customer-text-1 {
       width: auto;

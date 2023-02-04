@@ -1,43 +1,4 @@
-<div class="header">
-    <div class="height">GERICHT</div>
-    <div class="height_2">
-        <ul class="menu">
-            <li><a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
-            <li><a routerLink="/menu" routerLinkActive="active" ariaCurrentWhenActive="page">Menu</a></li>
-            <li><a routerLink="/contacts" routerLinkActive="active" ariaCurrentWhenActive="page">Contact Us</a></li>
-            <li><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About Us</a></li>
-            <li><a routerLink="/offer" routerLinkActive="active" ariaCurrentWhenActive="page">Offers</a></li>
-        </ul>
-        <ul class="login">
-            <li class="log"><a href="#">Log in / Registration</a></li>
-            <li><a href="#">Book table</a></li>
-        </ul>
-    </div>
-</div>
-
-<div class="hamburger-menu">
-    <input id="menu__toggle" type="checkbox" />
-    <label class="menu__btn" for="menu__toggle">
-        <span></span>
-    </label>
-    <ul class="menu__box">
-        <li><a class="menu__item" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
-        </li>
-        <li><a class="menu__item" routerLink="/menu" routerLinkActive="active" ariaCurrentWhenActive="page">Menu</a>
-        </li>
-        <li><a class="menu__item" routerLink="/contacts" routerLinkActive="active" ariaCurrentWhenActive="page">Contact
-                Us</a>
-        </li>
-        <li><a class="menu__item" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About
-                Us</a>
-        </li>
-        <li><a class="menu__item" routerLink="/offer" routerLinkActive="active" ariaCurrentWhenActive="page">Offers</a>
-        </li>
-
-        <li><a class="menu__item" href="#">Log in / Registration</a></li>
-        <li><a class="menu__item" href="#">Book table</a></li>
-    </ul>
-</div>
+<app-header></app-header>
 
 
 <div class="header_2">
@@ -87,7 +48,7 @@
             vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
     </div>
     <img class="zn" src="/assets/img/zn.png">
-    <video src="/assets/img/Video-1.mp4" controls loop></video>
+    <video src="/assets/img/Video-1.mp4" autoplay loop [muted]="'muted'" playsInline></video>
 </div>
 
 
@@ -197,39 +158,4 @@
 </div>
 
 
-<div class="header_9">
-    <div class="all">
-        <div class="texts-8">
-            <p class="contacts">Contact Us</p>
-            <p class="adress">9 W 53rd St, New York, NY 10019, USA</p>
-            <p class="phone">+1 212-344-1230</p>
-            <p class="phone">+1 212-555-1230</p>
-        </div>
-        <div class="center">
-            <p class="text_5">Gerícht</p>
-            <p class="text_4">"The best way to find yourself is to lose yourself in the service of others”</p>
-            <div class="social">
-                <a href="https://twitter.com/search?q=gericht&src=typed_query" target="_blank"><img
-                        src="/assets/img/u_twitter-alt.png" alt="facebook"></a>
-                <a href="https://www.facebook.com/groups/641839766874583" target="_blank"><img
-                        src="/assets/img/u_facebook-f.png" alt="facebook"></a>
-                <a href="https://instagram.com/manuelas.kochstube?igshid=YmMyMTA2M2Y=" target="_blank"><img
-                        src="/assets/img/u_instagram.png" alt="facebook"></a>
-
-            </div>
-        </div>
-
-        <div class="right">
-            <p class="contacts">Working Hours</p>
-            <p class="days">Monday-Friday:</p>
-            <p class="days">09:00-10:00</p>
-            <p class="days">Saturday-Sunday:</p>
-            <p class="days">10:00-00:00</p>
-
-        </div>
-    </div>
-
-    <footer>
-        <p class="footer_p">2022 Gerícht. All Rights reserved</p>
-    </footer>
-</div>
+<app-footer></app-footer>

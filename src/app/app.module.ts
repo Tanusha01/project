@@ -10,6 +10,8 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { MenuComponent } from './menu/menu.component';
 import { ErrorComponent } from './error/error.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 const routes=[
 {path:'home', component:HomePageComponent},
@@ -32,7 +34,9 @@ const routes=[
     ContactsComponent,
     HomePageComponent,
     MenuComponent,
-    ErrorComponent
+    ErrorComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
