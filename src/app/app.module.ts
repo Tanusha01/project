@@ -12,6 +12,7 @@ import { MenuComponent } from './menu/menu.component';
 import { ErrorComponent } from './error/error.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes=[
 {path:'home', component:HomePageComponent},
@@ -42,7 +43,8 @@ const routes=[
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
