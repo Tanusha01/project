@@ -42,14 +42,15 @@
     align-items: center;
     flex-direction: row;
     gap: 10px;
+    color: #ffffff;
   }
   .login a {
     color: #ffffff;
     text-decoration: none;
+    border-left: 1px solid #ffffff;
+    padding: 20px;
   }
-  .log {
-    border-right: 2px solid #ffffff;
-  }
+
   .log a {
     margin-right: 10px;
   }

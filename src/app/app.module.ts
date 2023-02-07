@@ -13,6 +13,13 @@ import { ErrorComponent } from './error/error.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DialogElementsExample, DialogElementsExampleDialog } from './dialog-elements-example-dialog/dialog-elements-example';
+
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatNativeDateModule} from '@angular/material/core';
+import {HttpClientModule} from '@angular/common/http';
+import {MaterialExampleModule} from './material.module';
+
 
 const routes=[
 {path:'home', component:HomePageComponent},
@@ -37,16 +44,23 @@ const routes=[
     MenuComponent,
     ErrorComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    DialogElementsExample, DialogElementsExampleDialog
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
     RouterModule.forRoot(routes),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    BrowserModule,
+    HttpClientModule,
+    MatNativeDateModule,
+    MaterialExampleModule,
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, DialogElementsExample]
 })
 export class AppModule { }
