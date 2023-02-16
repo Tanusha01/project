@@ -15,10 +15,15 @@ import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DialogElementsExample, DialogElementsExampleDialog } from './dialog-elements-example-dialog/dialog-elements-example';
 
+import { Dialog, DialogElement } from './dialog-element/dialog';
+
+import { LogInDialog, LogInDialogExample } from './log-in-dialog/log-in-dialog';
+
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatNativeDateModule} from '@angular/material/core';
 import {HttpClientModule} from '@angular/common/http';
 import {MaterialExampleModule} from './material.module';
+
 
 
 const routes=[
@@ -37,6 +42,8 @@ const routes=[
 @NgModule({
   declarations: [
     AppComponent,
+    LogInDialog,
+    LogInDialogExample,
     MyProjectComponent,
     AboutUsComponent,
     ContactsComponent,
@@ -45,7 +52,8 @@ const routes=[
     ErrorComponent,
     HeaderComponent,
     FooterComponent,
-    DialogElementsExample, DialogElementsExampleDialog
+    DialogElementsExample, DialogElementsExampleDialog,
+    Dialog,DialogElement
   ],
   imports: [
     BrowserModule,

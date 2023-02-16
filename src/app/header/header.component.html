@@ -1,5 +1,5 @@
 <div class="header">
-    <div class="height">GERICHT</div>
+    <a class="height" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">GERICHT</a>
     <div class="height_2">
         <ul class="menu">
             <li><a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
@@ -10,7 +10,7 @@
         </ul>
         <ul class="login">
             <dialog-elements-example></dialog-elements-example>
-            <li><a routerLink="/offer" routerLinkActive="active" ariaCurrentWhenActive="page">Book table</a></li>
+            <dialog class="dialog"></dialog>
         </ul>
     </div>
 </div>
@@ -32,8 +32,7 @@
         </li>
         <li><a class="menu__item" routerLink="/offer" routerLinkActive="active" ariaCurrentWhenActive="page">Offers</a>
         </li>
-
-        <li><a class="menu__item" href="#">Log in / Registration</a></li>
-        <li><a class="menu__item" href="#">Book table</a></li>
+        <dialog-elements-example></dialog-elements-example>
+        <dialog class="dialog"></dialog>
     </ul>
 </div>

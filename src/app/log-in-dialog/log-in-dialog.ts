@@ -5,14 +5,14 @@ import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog
  * @title Dialog elements
  */
 @Component({
-  selector: 'dialog-elements-example',
-  templateUrl: 'dialog-elements-example.html',
+  selector: 'log-in-dialog',
+  templateUrl: 'log-in-dialog.html',
 })
-export class DialogElementsExample {
+export class LogInDialog {
   constructor(public dialog: MatDialog) {}
 
   openDialog() {
-    let dialogRef = this.dialog.open(DialogElementsExampleDialog);
+    let dialogRef = this.dialog.open(LogInDialogExample);
     
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed', result);
@@ -25,12 +25,12 @@ export class DialogElementsExample {
 
 
 @Component({
-  selector: 'dialog-elements-example-dialog',
-  templateUrl: 'dialog-elements-example-dialog.html',
-  styleUrls: ['dialog-elements-example-dialog.scss'],
+  selector: 'log-in-dialog-examle',
+  templateUrl: 'log-in-dialog-examle.html',
+  styleUrls: ['log-in-dialog-examle.scss'],
 })
-export class DialogElementsExampleDialog {
-  constructor(public dialogRef: MatDialogRef<DialogElementsExampleDialog>) {}
+export class LogInDialogExample {
+  constructor(public dialogRef: MatDialogRef<LogInDialogExample>) {}
   
   closeDialog() {
     this.dialogRef.close(true);

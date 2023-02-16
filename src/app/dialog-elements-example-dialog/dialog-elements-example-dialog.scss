@@ -1,0 +1,120 @@
+:host {
+  .mat-mdc-dialog-container .mdc-dialog__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  select {
+    background: #0c0b08;
+    color: white;
+    height: 40px;
+    width: 150px;
+  }
+  .all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  h1 {
+    color: #dcca87;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  .zn {
+    position: absolute;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    top: 10px;
+  }
+  .block {
+    background: #0c0b08;
+    border: 2px solid #dcca87;
+    height: 24em;
+    position: relative;
+  }
+  form input {
+    background: #0c0b08;
+    color: white;
+    height: 40px;
+    width: 150px;
+    &::-webkit-calendar-picker-indicator {
+      background-color: #dcca87;
+      padding: 20px 10px;
+    }
+  }
+  button {
+    background: #0c0b08;
+    color: white;
+    height: 40px;
+    width: 120px;
+    border: 1px solid #dcca87;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  h2 {
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cormorant Upright';
+    font-weight: 700;
+    text-decoration: none;
+  }
+  @media (max-width: 850px) {
+    .all {
+      flex-direction: column;
+    }
+    .block {
+      height: 37em;
+    }
+    form input,
+    select {
+      height: 35px;
+      width: 180px;
+    }
+  }
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 25px;
+    }
+    button {
+      width: 100px;
+    }
+    .mat-mdc-dialog-content .mdc-dialog__content {
+      padding: 10px;
+    }
+    .buttons {
+      flex-direction: column;
+      margin: 0 20px;
+      padding: 0;
+    }
+    form {
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+    .buttons button {
+      margin: 0 auto;
+      width: 180px;
+      &:nth-child(1) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

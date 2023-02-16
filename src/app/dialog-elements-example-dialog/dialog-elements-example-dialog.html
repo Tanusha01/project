@@ -1,5 +1,28 @@
-<h1 mat-dialog-title>Dialog with elements</h1>
-<div mat-dialog-content>This dialog showcases the title, close, content and actions elements.</div>
-<div mat-dialog-actions>
-    <button mat-raised-button (click)="closeDialog()">Close</button>
+<div class="block">
+    <img class="zn" src="/assets/img/zn.png">
+    <h1 mat-dialog-title>Book A Table</h1>
+    <h2 mat-dialog-title>GERICHT</h2>
+    <div mat-dialog-content class="all">
+        <div mat-dialog-content><select>
+                <option>1 person</option>
+                <option>2-5 persons</option>
+                <option>6-10 persons</option>
+                <option selected>Number of persons</option>
+            </select></div>
+        <div mat-dialog-content>
+            <form>
+                <input type="date" name="calendar" value="2023-01-01" max="2023-01-31" min="2023-01-18">
+            </form>
+        </div>
+        <div mat-dialog-content>
+            <form>
+                <input id="appt-time" type="time" name="appt-time" min="12:00" max="18:00">
+                <span class="validity"></span>
+            </form>
+        </div>
+    </div>
+    <div mat-dialog-actions class="buttons">
+        <button mat-raised-button (click)="closeDialog()">Reservation</button>
+        <button mat-raised-button (click)="closeDialog()">Close</button>
+    </div>
 </div>
