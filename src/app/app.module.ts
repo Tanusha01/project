@@ -24,7 +24,9 @@ import {MatNativeDateModule} from '@angular/material/core';
 import {HttpClientModule} from '@angular/common/http';
 import {MaterialExampleModule} from './material.module';
 
+import { SwiperModule } from 'swiper/angular';
 
+import {docsCarousel06 } from './docs-carousel06/docs-carousel06.component'
 
 const routes=[
 {path:'home', component:HomePageComponent},
@@ -53,7 +55,7 @@ const routes=[
     HeaderComponent,
     FooterComponent,
     DialogElementsExample, DialogElementsExampleDialog,
-    Dialog,DialogElement
+    Dialog,DialogElement, docsCarousel06
   ],
   imports: [
     BrowserModule,
@@ -67,8 +69,9 @@ const routes=[
     MatNativeDateModule,
     MaterialExampleModule,
     ReactiveFormsModule,
+    SwiperModule
   ],
   providers: [],
-  bootstrap: [AppComponent, DialogElementsExample]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

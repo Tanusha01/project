@@ -1,6 +1,6 @@
 :host {
   .block {
-    width: 500px;
+    max-width: 500px;
     height: 700px;
     background: #0c0b08;
   }
@@ -73,6 +73,17 @@
     margin: 0 auto;
     gap: 20px;
   }
+  .log {
+    background: #0c0b08;
+    color: white;
+    height: 40px;
+    width: 120px;
+    border: 1px solid #dcca87;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
   h2 {
     font-size: 30px;
     color: white;
@@ -84,6 +95,12 @@
     text-decoration: none;
   }
 
+  @media (max-width: 700px) {
+    .block {
+      width: 400px;
+      height: 650px;
+    }
+  }
   @media (max-width: 600px) {
     .block {
       width: 300px;
@@ -101,8 +118,8 @@
   }
   @media (max-width: 400px) {
     .block {
-      width: 280px;
       height: 570px;
+      width: auto;
     }
     input {
       width: 180px;
