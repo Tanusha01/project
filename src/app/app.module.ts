@@ -27,6 +27,10 @@ import {MaterialExampleModule} from './material.module';
 import { SwiperModule } from 'swiper/angular';
 
 import {docsCarousel06 } from './docs-carousel06/docs-carousel06.component'
+import { SnackBarOverviewExample } from './snack-bar-example/snack-bar-overview-example';
+import { MatInput, MatInputModule } from '@angular/material/input';
+import {  MatFormFieldModule } from '@angular/material/form-field';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/compiler';
 
 const routes=[
 {path:'home', component:HomePageComponent},
@@ -34,7 +38,8 @@ const routes=[
 {path:'about', component:AboutUsComponent},
 {path:'contacts', component:ContactsComponent},
 {path:'menu', component:MenuComponent},
-{path:'error', component:ErrorComponent}
+{path:'error', component:ErrorComponent},
+{path:'**', component:ErrorComponent},
 
 
 
@@ -55,7 +60,9 @@ const routes=[
     HeaderComponent,
     FooterComponent,
     DialogElementsExample, DialogElementsExampleDialog,
-    Dialog,DialogElement, docsCarousel06
+    Dialog,DialogElement, docsCarousel06,
+    SnackBarOverviewExample,
+    
   ],
   imports: [
     BrowserModule,
@@ -69,7 +76,10 @@ const routes=[
     MatNativeDateModule,
     MaterialExampleModule,
     ReactiveFormsModule,
-    SwiperModule
+    SwiperModule,
+    MatInputModule,
+    MatFormFieldModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

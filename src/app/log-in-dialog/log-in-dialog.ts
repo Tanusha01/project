@@ -25,15 +25,28 @@ export class LogInDialog {
 }
 
 
+
+
+import {FormControl, Validators} from '@angular/forms';
+
+/** @title Form field with error messages */
 @Component({
   selector: 'log-in-dialog-examle',
   templateUrl: 'log-in-dialog-examle.html',
   styleUrls: ['log-in-dialog-examle.scss'],
 })
 export class LogInDialogExample {
-  constructor(public dialogRef: MatDialogRef<LogInDialogExample>) {}
-  
-  closeDialog() {
-    this.dialogRef.close(true);
+  email = new FormControl('', [Validators.required, Validators.email]);
+  hide = true;
+  checked = false;
+  indeterminate = false;
+  labelPosition: 'before' | 'after' = 'after';
+  disabled = false;
+  getErrorMessage() {
+    if (this.email.hasError('required')) {
+      return 'You must enter a value';
+    }
+
+    return this.email.hasError('email') ? 'Not a valid email' : '';
   }
 }

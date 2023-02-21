@@ -1,0 +1,18 @@
+<div class="all">
+    <div class="inputs">
+        <select #message3>
+            <option>1 person</option>
+            <option>2-5 persons</option>
+            <option>6-10 persons</option>
+            <option selected>Number of persons</option>
+        </select>
+        <form>
+            <input type="date" name="calendar" value="2023-01-01" #message max="2023-01-31" min="2023-01-18">
+            <input id="appt-time" type="time" name="appt-time" #message2 min="12:00" max="18:00">
+            <span class="validity"></span>
+        </form>
+    </div>
+
+    <button class="book-now" mat-stroked-button
+        (click)="openSnackBar(message.value, message3.value, message2.value)">Book Now</button>
+</div>
