@@ -23,11 +23,5 @@ export class docsCarousel06 {
     navigation: true,
     scrollbar: { draggable: true },
   };
-  onSwiper([swiper] : any) {
-    console.log(swiper);
-  }
-  onSlideChange() {
-    console.log('slide change');
-  }
 }
 

@@ -8,19 +8,23 @@
         <label for="login">
             <p>Name</p>
         </label>
-        <input type="text" placeholder="Enter Name*" name="name" id="name" required>
+        <input type="text" placeholder="Enter Name*" name="name" id="name" required
+            title="Разрешено использовать только пробелы, англиские и русские буквы. Вводите свое настоящее имя"
+            pattern="^[A-Za-zА-Яа-яЁё\s]{2,}">
 
         <label for="psw-repeat">
             <p>Password</p>
         </label>
-        <input type="password" placeholder="Enter Password*" name="psw-repeat" required>
+        <input type="password" placeholder="Enter Password*" name="psw-repeat" required
+            title="Разрешены только латинские буквы и цифры" pattern="^[a-zA-Z0-9]{7,12}">
 
         <label for="email">
             <p>Email</p>
         </label>
-        <input type="text" placeholder="Enter Email" name="email">
-
-        <div class="checkbox">
+        <input type="email" placeholder="Enter Email" name="email" required
+            title="Необходимо использовать лаьтнские буквы, цифры  символы"
+            pattern="/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/">
+        <div class=" checkbox">
             <input type="checkbox" id="scales" name="scales" checked>
             <label for="scales">Remember me</label>
         </div>

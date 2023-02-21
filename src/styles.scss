@@ -8,3 +8,13 @@ html,
 body {
   height: 100%;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&display=swap');
+@font-face {
+  font-family: CormorantUpright-Bold;
+  src: url(./assets/fonts/CormorantUpright-Bold.ttf);
+}
+@font-face {
+  font-family: CormorantUpright-Light;
+  src: url(./assets/fonts/CormorantUpright-Light.ttf);
+}

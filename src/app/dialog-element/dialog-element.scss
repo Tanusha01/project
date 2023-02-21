@@ -4,7 +4,16 @@
     height: 700px;
     background: #0c0b08;
   }
-
+  input:valid {
+    border-color: green;
+    color: rgb(90, 93, 90);
+    box-shadow: none;
+  }
+  input:invalid {
+    border-color: red;
+    color: red;
+    box-shadow: none;
+  }
   .all {
     display: flex;
     align-items: center;
