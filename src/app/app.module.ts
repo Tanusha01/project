@@ -3,21 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MyProjectComponent } from './my-project/my-project.component';
-import { AboutUsComponent } from './about-us/about-us.component';
+import { MyProjectComponent } from './components/my-project/my-project.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 import { RouterModule } from '@angular/router';
-import { ContactsComponent } from './contacts/contacts.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { MenuComponent } from './menu/menu.component';
-import { ErrorComponent } from './error/error.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { ErrorComponent } from './components/error/error.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DialogElementsExample, DialogElementsExampleDialog } from './dialog-elements-example-dialog/dialog-elements-example';
+import { DialogElementsExample, DialogElementsExampleDialog } from './components/dialog-elements-example-dialog/dialog-elements-example';
 
-import { Dialog, DialogElement } from './dialog-element/dialog';
+import { Dialog, DialogElement } from './components/dialog-element/dialog';
 
-import { LogInDialog, LogInDialogExample } from './log-in-dialog/log-in-dialog';
+import { LogInDialog, LogInDialogExample } from './components/log-in-dialog/log-in-dialog';
 
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatNativeDateModule} from '@angular/material/core';
@@ -26,8 +26,8 @@ import {MaterialExampleModule} from './material.module';
 
 import { SwiperModule } from 'swiper/angular';
 
-import {docsCarousel06 } from './docs-carousel06/docs-carousel06.component'
-import { SnackBarOverviewExample } from './snack-bar-example/snack-bar-overview-example';
+import {docsCarousel06 } from './components/docs-carousel06/docs-carousel06.component'
+import { SnackBarOverviewExample } from './components/snack-bar-example/snack-bar-overview-example';
 import { MatInput, MatInputModule } from '@angular/material/input';
 import {  MatFormFieldModule } from '@angular/material/form-field';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/compiler';
