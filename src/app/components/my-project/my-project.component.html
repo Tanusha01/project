@@ -36,22 +36,7 @@
     <div class="block">
         <p class="text_1">Reservations</p>
         <p class="text_2">Book A Table</p>
-        <div class="inputs">
-            <select>
-                <option>1 person</option>
-                <option>2-5 persons</option>
-                <option>6-10 persons</option>
-                <option selected>Number of persons</option>
-            </select>
-            <form>
-                <input type="date" name="calendar" value="2023-01-01" max="2023-01-31" min="2023-01-18">
-            </form>
-            <form>
-                <input id="appt-time" type="time" name="appt-time" min="12:00" max="18:00">
-                <span class="validity"></span>
-            </form>
-        </div>
-        <button class="book-now">Book Now</button>
+        <snack-bar-example></snack-bar-example>
     </div>
 </div>
 
@@ -66,16 +51,7 @@
 
 
 <div class="header_7">
-    <div class="block">
-        <p class="text_1">Newsletter</p>
-        <p class="text_2">Subscribe To Our Newsletter</p>
-        <p class="text_3">And never miss latest Updates!</p>
-        <div class="mail">
-            <input type="email" id="email" name="email" placeholder="Email Adress">
-            <button class="book-now">Subscribe</button>
-        </div>
-    </div>
-    <img class="zn_2" src="/assets/img/zn.png">
+    <snack-bar-mail></snack-bar-mail>
 </div>
 
 

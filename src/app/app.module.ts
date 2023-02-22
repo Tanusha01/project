@@ -32,6 +32,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/compiler';
 
 import { LoginComponent } from './components/login/login.component';
+import { SnackBarComponentExample } from './components/snack-bar-mail/snack-bar-mail';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { LoginComponent } from './components/login/login.component';
     docsCarousel06,
     SnackBarOverviewExample,
     LoginComponent,
+    SnackBarComponentExample,
   ],
   imports: [
     BrowserModule,
