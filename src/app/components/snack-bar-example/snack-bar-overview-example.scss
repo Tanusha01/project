@@ -19,13 +19,13 @@ select {
   background: #0c0b08;
 }
 form input:nth-child(2) {
-  margin-top: 20px;
+  margin-left: 20px;
 }
 form {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 form input {
   width: 250px;
@@ -40,6 +40,12 @@ form input {
     padding: 20px 10px;
   }
 }
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
 .all button {
   width: 145px;
   height: 44px;
@@ -50,4 +56,16 @@ form input {
   font-weight: 600;
   font-size: 16px;
   margin-bottom: 10px;
+}
+@media (max-width: 1000px) {
+  .inputs {
+    flex-direction: column;
+  }
+  form {
+    flex-direction: column;
+  }
+  form input:nth-child(2) {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
 }

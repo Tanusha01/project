@@ -34,8 +34,13 @@
   .block {
     background: #0c0b08;
     border: 2px solid #dcca87;
-    height: 24em;
+    height: 35em;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
   }
   form input {
     background: #0c0b08;

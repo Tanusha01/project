@@ -13,44 +13,30 @@ import { ErrorComponent } from './components/error/error.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DialogElementsExample, DialogElementsExampleDialog } from './components/dialog-elements-example-dialog/dialog-elements-example';
+import {
+  DialogElementsExample,
+  DialogElementsExampleDialog,
+} from './components/dialog-elements-example-dialog/dialog-elements-example';
 
-import { Dialog, DialogElement } from './components/dialog-element/dialog';
-
-import { LogInDialog, LogInDialogExample } from './components/log-in-dialog/log-in-dialog';
-
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {MatNativeDateModule} from '@angular/material/core';
-import {HttpClientModule} from '@angular/common/http';
-import {MaterialExampleModule} from './material.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatNativeDateModule } from '@angular/material/core';
+import { HttpClientModule } from '@angular/common/http';
+import { MaterialExampleModule } from './material.module';
 
 import { SwiperModule } from 'swiper/angular';
 
-import {docsCarousel06 } from './components/docs-carousel06/docs-carousel06.component'
+import { docsCarousel06 } from './components/docs-carousel06/docs-carousel06.component';
 import { SnackBarOverviewExample } from './components/snack-bar-example/snack-bar-overview-example';
 import { MatInput, MatInputModule } from '@angular/material/input';
-import {  MatFormFieldModule } from '@angular/material/form-field';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/compiler';
 
-const routes=[
-{path:'home', component:HomePageComponent},
-{path:'offer', component:MyProjectComponent},
-{path:'about', component:AboutUsComponent},
-{path:'contacts', component:ContactsComponent},
-{path:'menu', component:MenuComponent},
-{path:'error', component:ErrorComponent},
-{path:'**', component:ErrorComponent},
-
-
-
-
-]
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LogInDialog,
-    LogInDialogExample,
+
     MyProjectComponent,
     AboutUsComponent,
     ContactsComponent,
@@ -59,16 +45,16 @@ const routes=[
     ErrorComponent,
     HeaderComponent,
     FooterComponent,
-    DialogElementsExample, DialogElementsExampleDialog,
-    Dialog,DialogElement, docsCarousel06,
+    DialogElementsExample,
+    DialogElementsExampleDialog,
+    docsCarousel06,
     SnackBarOverviewExample,
-    
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    RouterModule.forRoot(routes),
     BrowserAnimationsModule,
     FormsModule,
     BrowserModule,
@@ -82,6 +68,6 @@ const routes=[
     AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

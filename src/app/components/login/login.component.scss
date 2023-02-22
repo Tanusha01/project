@@ -1,0 +1,44 @@
+:host {
+  h1 {
+    font-family: 'Cormorant Upright';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 50px;
+    color: #dcca87;
+    text-transform: capitalize;
+    padding-bottom: 100px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background: url(/assets/img/Mask\ Group.png);
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 400px;
+  }
+  button {
+    background-color: #dcca87;
+    color: black;
+  }
+  @media (max-width: 1000px) {
+    .login-form {
+      width: 300px;
+    }
+  }
+}
